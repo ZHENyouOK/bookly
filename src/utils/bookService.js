@@ -1,7 +1,7 @@
 import { client } from "./api";
 
 export const getBooks = async (title) => {
-  const defaultTitle = "Adventure";
+  const defaultTitle = "Adventure in the forest";
   return client
     .request(`/search.json?title=${title || defaultTitle}`)
     .then((response) => response.docs || response.data.docs || [])

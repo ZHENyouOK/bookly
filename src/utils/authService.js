@@ -14,7 +14,7 @@ export const logoutUser = (auth) =>
 export const registerUser = async (auth, email, password, displayName) => {
   const { user } = await createUserWithEmailAndPassword(auth, email, password);
   if (!user) {
-    throw new Error("No user exception!");
+    throw new Error("No user error!");
   }
 
   await updateProfile(user, {
