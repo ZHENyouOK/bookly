@@ -81,10 +81,9 @@ export const BookPage = () => {
   }
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "center" }}>
+    <Box sx={{ display: "flex", justifyContent: "center", pb: "16px" }}>
       <Box
         sx={{
-          height: "calc(100vh - 104px)",
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",

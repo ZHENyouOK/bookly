@@ -37,6 +37,7 @@ export const HomePage = () => {
 
   const fetchBooks = useCallback((search) => {
     setYear(null);
+    setPage(1);
     setLoading(true);
     return getBooks(search).then((fetchedBooks) => {
       localforage.setItem("books", fetchedBooks);
