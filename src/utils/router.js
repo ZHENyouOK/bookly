@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
 import { HomePage } from "../pages/HomePage";
 import { BookPage } from "../pages/BookPage";
 import { PageContainer } from "../components/PageContainer";
@@ -10,7 +10,7 @@ export const getBookPageRoute = (bookId) => {
   return `books/${bookId}`;
 };
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     element: (
