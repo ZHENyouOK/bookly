@@ -1,5 +1,5 @@
 export const API = {
-  URL: "http://openlibrary.org/",
+  URL: "https://openlibrary.org/",
   KEY: "53137aa142msh865fa4442983060p1199ecjsn836ad9b6b109",
 };
 
