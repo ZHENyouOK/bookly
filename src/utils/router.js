@@ -1,10 +1,10 @@
-import { createBrowserRouter, createHashRouter } from "react-router-dom";
-import { HomePage } from "../pages/HomePage";
-import { BookPage } from "../pages/BookPage";
+import { createHashRouter } from "react-router-dom";
 import { PageContainer } from "../components/PageContainer";
-import { RegisterPage } from "../pages/RegisterPage";
+import { BookPage } from "../pages/BookPage";
+import { HomePage } from "../pages/HomePage";
 import { LoginPage } from "../pages/LoginPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
+import { RegisterPage } from "../pages/RegisterPage";
 
 export const getBookPageRoute = (bookId) => {
   return `books/${bookId}`;
