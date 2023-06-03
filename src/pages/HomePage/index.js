@@ -28,7 +28,7 @@ export const HomePage = () => {
       return [];
     }
     const filteredBooks = year
-      ? books.filter((book) => book["first_publish_year"].toString() === year)
+      ? books.filter((book) => book["first_publish_year"]?.toString() === year)
       : books;
     const firstItem = (page - 1) * itemsPerPage;
     const lastItem = firstItem + itemsPerPage;
